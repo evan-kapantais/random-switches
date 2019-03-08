@@ -1,0 +1,55 @@
+body {
+  background-color: #40729C;
+}
+
+.container {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  background-color: #fff;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  width: 50px;
+  height: 30px;
+  background: #ccc;
+  border-radius: 30px;
+  border: 1px solid grey;
+  transition: all 0.2s ease;
+}
+
+.toggle {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.inner.active {
+  background-color: lightgreen;
+}
+
+.inner.active > .toggle {
+  transform: translateX(20px);
+}
+
+.inner.target {
+  background-color: lightgreen;
+}
+
+.inner.target > .toggle {
+  transform: translateX(20px);
+}
